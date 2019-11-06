@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteA]">
+  <listeners>
+    <listener class-name="com.techouts.fanniemae.listeners.JyperionListener"/>
+    <listener class-name="com.techouts.fanniemae.listeners.ExtentReporterNG"/>
+  </listeners>
+  <test name="test1(failed)">
+    <classes>
+      <class name="com.techouts.fanniemae.test.BeforeSuitePerformer">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.techouts.fanniemae.test.BeforeSuitePerformer -->
+      <class name="com.techouts.fanniemae.test.CreateRequisitions">
+        <methods>
+          <include name="openExcelFile"/>
+          <include name="createSpecialRequestsRequisitions"/>
+          <include name="commodityApprovalforSubmittedRequest"/>
+        </methods>
+      </class> <!-- com.techouts.fanniemae.test.CreateRequisitions -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [SuiteA] -->
