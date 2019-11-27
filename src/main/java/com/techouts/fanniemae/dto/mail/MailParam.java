@@ -61,7 +61,7 @@ public class MailParam {
 		private String username;
 		private String passcode;
 		private InternetAddress from;
-		private InternetAddress[] to;
+		private InternetAddress[] to;//To is many so that is what we are taking array
 		private String host;
 		private String port;
 		private String startTLS;

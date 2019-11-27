@@ -95,7 +95,7 @@ public final class TestExcelRepository {
 	public int getRowIdContainsTestCase(String testCase, int testCaseColNum, XSSFSheet sheet) {
 		if(Objects.nonNull(sheet)){
 			int lastRowInSheet = sheet.getLastRowNum();
-			for (int i = 0; i < lastRowInSheet; i++) {
+			for (int i = 0; i <=lastRowInSheet; i++) {
 				if (getCellData(i, testCaseColNum, sheet).equalsIgnoreCase(testCase)) {
 					LOG.debug("TestCase["+testCase+"] with ColumnIndex["+testCaseColNum+"] found in RowIndex["+i+"].");
 					return i;

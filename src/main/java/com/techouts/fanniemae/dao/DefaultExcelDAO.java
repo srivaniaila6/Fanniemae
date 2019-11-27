@@ -1,3 +1,4 @@
+
 package com.techouts.fanniemae.dao;
 
 import java.io.IOException;
@@ -27,7 +28,7 @@ import com.techouts.fanniemae.exceptions.FannieMaeBusinessException;
  * @author TO-WVLD-12
  *
  */
-class DefaultExcelDAO {
+public class DefaultExcelDAO {
 
 	private static final Logger LOG = Logger.getLogger(DefaultExcelDAO.class.getName());
 	

@@ -96,7 +96,7 @@ public final class WebElementOperations {
 		return false;
 	}
 	
-	public  static String getTimeStamp(String dateFormat) {
+	public  static String getTimeStamp(String dateFormat) {//clear
 		return new SimpleDateFormat(dateFormat).format(new Date());
 	}
 	

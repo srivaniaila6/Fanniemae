@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="222907" started-at="2019-11-03T13:31:26Z" finished-at="2019-11-03T13:35:09Z">
+  <suite name="Suite" duration-ms="13648" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:33Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="222907" started-at="2019-11-03T13:31:26Z" finished-at="2019-11-03T13:35:09Z">
-      <class name="com.techouts.fanniemae.testcases.CreateRequisitionsTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.techouts.fanniemae.testcases.CreateRequisitionsTest@8ad6665]" name="beforeSuite" is-config="true" duration-ms="498" started-at="2019-11-03T19:01:26Z" finished-at="2019-11-03T19:01:26Z">
+    <test name="Test1" duration-ms="13648" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:33Z">
+      <class name="com.pt.Sample1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="beforeSuite" is-config="true" duration-ms="100" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.techouts.fanniemae.testcases.CreateRequisitionsTest@8ad6665]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-03T19:01:29Z" finished-at="2019-11-03T19:01:29Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="beforeClass" is-config="true" duration-ms="2" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="createSpecialRequestsRequisitions()[pri:0, instance:com.techouts.fanniemae.testcases.CreateRequisitionsTest@8ad6665]" name="createSpecialRequestsRequisitions" duration-ms="163147" started-at="2019-11-03T19:01:29Z" finished-at="2019-11-03T19:04:12Z">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="openApplication" duration-ms="13489" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createSpecialRequestsRequisitions -->
-        <test-method status="PASS" signature="commodityApprovalforSubmittedRequest()[pri:0, instance:com.techouts.fanniemae.testcases.CreateRequisitionsTest@8ad6665]" name="commodityApprovalforSubmittedRequest" duration-ms="56730" started-at="2019-11-03T19:04:12Z" finished-at="2019-11-03T19:05:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- commodityApprovalforSubmittedRequest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.techouts.fanniemae.testcases.CreateRequisitionsTest@8ad6665]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-11-03T19:05:09Z" finished-at="2019-11-03T19:05:09Z">
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-11-26T13:49:33Z" finished-at="2019-11-26T13:49:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.techouts.fanniemae.testcases.CreateRequisitionsTest@8ad6665]" name="afterSuite" is-config="true" duration-ms="6241" started-at="2019-11-03T19:05:09Z" finished-at="2019-11-03T19:05:15Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="afterSuite" is-config="true" duration-ms="4708" started-at="2019-11-26T13:49:34Z" finished-at="2019-11-26T13:49:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.techouts.fanniemae.testcases.CreateRequisitionsTest -->
+      </class> <!-- com.pt.Sample1 -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

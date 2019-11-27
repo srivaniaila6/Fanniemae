@@ -40,7 +40,7 @@ public class DefaultMailService {
 	
 	public void transport() {
 		if (helper.isMandateDataAvailable(mailParam, suiteResult)) {
-			Session session = Session.getDefaultInstance(helper.getMailProperties(config));
+			Session session = Session.getDefaultInstance(helper.getMailProperties(config));//particular interval of time
 			MimeMessage message = new MimeMessage(session);
 			try {
 				message.setFrom(config.getFrom());

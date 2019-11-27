@@ -24,6 +24,7 @@ import org.openqa.selenium.WebElement;
 import com.techouts.fanniemae.consts.FanniemaeConstants;
 import com.techouts.fanniemae.exceptions.FannieMaeBusinessException;
 import com.techouts.fanniemae.page.elements.WebElementFactory;
+import com.techouts.fanniemae.page.elements.WebElementFactory1;
 import com.techouts.fanniemae.test.AbstractTest;
 import com.techouts.fanniemae.util.Assert;
 import com.techouts.fanniemae.util.PathProvider;
@@ -38,6 +39,7 @@ public class HomePageActions {
 	private static final Logger LOG = Logger.getLogger(HomePageActions.class.getName());
 	public static final String ADD_FILES_EXE = PathProvider.getForTestData()+"/AddFiles.exe";
 	private WebElementFactory elementFactory;
+	private WebElementFactory1 elementFactory1;
 	private WebDriver driver = null;
 	
 	public HomePageActions(WebElementFactory elementFactory, WebDriver driver) {
@@ -45,6 +47,13 @@ public class HomePageActions {
 		this.elementFactory = elementFactory;
 		this.driver = driver;
 	}
+	
+	public HomePageActions(WebElementFactory1 elementFactory1, WebDriver driver) {
+		super();
+		this.elementFactory1 = elementFactory1;
+		this.driver = driver;
+	}
+	
 	private static int pRWatchers = FanniemaeConstants.C;
 	private static int itemDescription = FanniemaeConstants.M;
 	private static int itemPrice = FanniemaeConstants.N;

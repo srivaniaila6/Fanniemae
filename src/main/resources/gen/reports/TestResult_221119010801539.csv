@@ -1,0 +1,6 @@
+"Id","TestCaseName","Result","Comment"
+"25f402bc-3a06-4d2a-b836-23f837669920","CreateSpecialRequestsRequisitions","Fail","Failed to Create Requisitions"
+"bfb2f272-87e5-46d7-b7c9-7966713ec7a0","CommodityApprovalforSubmittedRequest","Fail","Failed to commodityApprovalforSubmittedRequest"
+"4a017150-07f2-437a-b925-28447fa41df1","CreateCorporateSupplier","Fail","createCorporateSupplier has failed"
+"b53c69f5-2d50-4d8c-b6bb-d862f20f107d","CreateRealEstateBrokerSupplier","Fail","TestCase[CreateRealEstateBrokerSupplier] has failed."
+"907559c1-485d-40f8-8fb4-816c624e697d","createContractMasterServicesAgreement","Fail","contractMasterServicesAgreement has failed"
