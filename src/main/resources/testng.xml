@@ -17,11 +17,13 @@
 <!-- 					<class name="com.pt.InterfaceExecutionConsole"/> -->
 <!-- 				<class name="com.pt.APIConsole"/> -->
 <!-- 						<class name="com.pt.AS2FileSender"/> -->
+
 <!-- 							<class name="com.pt.TokenList"/> -->
 <!-- 								<class name="com.pt.CubeManage"/> -->
 <!--                          <class name="com.pt.Projects"/>  -->
 <!-- 						<class name="com.pt.Sample1"/> -->
-			<class name="com.techouts.fanniemae.testcases.CreateRequisitionsTest"/> 
+                    <class name="com.fanniemae.CreateAcCatalogRequisition"/>
+<!-- 			<class name="com.techouts.fanniemae.testcases.CreateRequisitionsTest"/>  -->
 <!-- 		<class name="com.techouts.fanniemae.testcases.CreateContractMasterServicesAgreement"/>	 -->
 <!--  			<class name="com.techouts.fanniemae.testcases.CorporateSupplierCreationTest"/> -->
 <!--  		<class name="com.techouts.fanniemae.testcases.RealEstateBrokerSupplierCreationTest"/> -->

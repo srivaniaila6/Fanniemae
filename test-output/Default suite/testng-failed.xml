@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pt.SupplierReg">
+      <class name="com.fanniemae.CreateAcCatalogRequisition">
         <methods>
           <include name="afterSuite"/>
+          <include name="createSpecialRequestsRequisitions"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="openApplication"/>
         </methods>
-      </class> <!-- com.pt.SupplierReg -->
+      </class> <!-- com.fanniemae.CreateAcCatalogRequisition -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

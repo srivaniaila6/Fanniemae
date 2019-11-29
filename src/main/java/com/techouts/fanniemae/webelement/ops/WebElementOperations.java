@@ -281,6 +281,7 @@ public final class WebElementOperations {
 		try {
 			waitForElementPresence(driver, element, 30);
 			webElementHighlighter(driver, element);
+			scrollTo(driver, element);
 			return element.getText();
 		} catch (Exception ex) {
 			LOG.error("Error occurred while parsing the text from WebElement["+element+"]");
@@ -412,4 +413,11 @@ public final class WebElementOperations {
 		}
 		return false;
 	}
+	
+	 public static void scrollTo(WebDriver driver, WebElement element) {
+	        ((JavascriptExecutor) driver).executeScript(
+	                "arguments[0].scrollIntoView();", element);
+	    }
+	 
+	
 }

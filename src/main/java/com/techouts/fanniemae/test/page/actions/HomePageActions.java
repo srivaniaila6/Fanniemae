@@ -25,6 +25,7 @@ import com.techouts.fanniemae.consts.FanniemaeConstants;
 import com.techouts.fanniemae.exceptions.FannieMaeBusinessException;
 import com.techouts.fanniemae.page.elements.WebElementFactory;
 import com.techouts.fanniemae.page.elements.WebElementFactory1;
+import com.techouts.fanniemae.page.elements.WebElementFactory2;
 import com.techouts.fanniemae.test.AbstractTest;
 import com.techouts.fanniemae.util.Assert;
 import com.techouts.fanniemae.util.PathProvider;
@@ -40,11 +41,18 @@ public class HomePageActions {
 	public static final String ADD_FILES_EXE = PathProvider.getForTestData()+"/AddFiles.exe";
 	private WebElementFactory elementFactory;
 	private WebElementFactory1 elementFactory1;
+	private WebElementFactory2 elementFactory2;
 	private WebDriver driver = null;
 	
 	public HomePageActions(WebElementFactory elementFactory, WebDriver driver) {
 		super();
 		this.elementFactory = elementFactory;
+		this.driver = driver;
+	}
+	
+	public HomePageActions(WebElementFactory2 elementFactory2, WebDriver driver) {
+		super();
+		this.elementFactory2 = elementFactory2;
 		this.driver = driver;
 	}
 	

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.techouts.fanniemae.listeners.JyperionListener"/>
+    <listener class-name="com.techouts.fanniemae.listeners.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="com.pt.SupplierReg">
+      <class name="com.fanniemae.CreateAcCatalogRequisition">
         <methods>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
+          <include name="approve"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="openApplication"/>
         </methods>
-      </class> <!-- com.pt.SupplierReg -->
+      </class> <!-- com.fanniemae.CreateAcCatalogRequisition -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

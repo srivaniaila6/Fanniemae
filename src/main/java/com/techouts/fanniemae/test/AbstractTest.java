@@ -29,6 +29,7 @@ import com.techouts.fanniemae.mail.DefaultMailService;
 import com.techouts.fanniemae.mail.MailContentPreparer;
 import com.techouts.fanniemae.page.elements.WebElementFactory;
 import com.techouts.fanniemae.page.elements.WebElementFactory1;
+import com.techouts.fanniemae.page.elements.WebElementFactory2;
 import com.techouts.fanniemae.registry.Registry;
 import com.techouts.fanniemae.registry.RegistryKey;
 import com.techouts.fanniemae.repo.TestExcelRepository;
@@ -48,6 +49,7 @@ public abstract class AbstractTest implements AbstractPerformer {
 	private static final WebDriver DRIVER;
 	private static final WebElementFactory WEBELEMENTFACTORY;
 	private static final WebElementFactory1 WEBELEMENTFACTORY1;
+	private static final WebElementFactory2 WEBELEMENTFACTORY2;
 	protected static final String DEFAULT_SHEET_NAME;
 	protected static final String DEFAULT_WORKBOOK_NAME;
 	protected static final TestExcelRepository REPOSITORY;
@@ -60,6 +62,7 @@ public abstract class AbstractTest implements AbstractPerformer {
 	protected static final String IE_SYS_PROP_KEY = "webdriver.ie.driver";
 	protected static final HomePageActions HOMEPAGE_ACTIONS;
 	protected static final HomePageActions HOMEPAGE_ACTION;
+	protected static final HomePageActions HOMEPAGE_ACTION1;
 	
 	protected static final Logger LOG = Logger.getLogger(AbstractTest.class.getName()); 
 	
@@ -69,11 +72,13 @@ public abstract class AbstractTest implements AbstractPerformer {
 		DRIVER = WebDriverProducer.getWebDriver(CommonUtils.getConfiguredDriverBrowser(), CommonUtils.getConfiguredCapabilities());
 		WEBELEMENTFACTORY = PageFactory.initElements(DRIVER, WebElementFactory.class);
 		WEBELEMENTFACTORY1 = PageFactory.initElements(DRIVER, WebElementFactory1.class);
+		WEBELEMENTFACTORY2 = PageFactory.initElements(DRIVER, WebElementFactory2.class);
 		WORKBOOK_PATH = PathProvider.getTestDataFilePath();
 		REPOSITORY = new TestExcelRepository();
 		VIRTUAL_BOOK_REPOSITORY = new WorkbookOperations(WORKBOOK_PATH);
 		HOMEPAGE_ACTIONS = new HomePageActions(WEBELEMENTFACTORY, DRIVER);
 		HOMEPAGE_ACTION = new HomePageActions(WEBELEMENTFACTORY1, DRIVER);
+		HOMEPAGE_ACTION1 = new HomePageActions(WEBELEMENTFACTORY2, DRIVER);
 		
 		IS_EXCEL_MOD_IN_BEFORE_SUITE = CommonUtils.getConfigForExcelModInBeforeSuiteContext();
 		IS_EXCEL_MOD_IN_BEFORE_CLASS = (!IS_EXCEL_MOD_IN_BEFORE_SUITE) ? Boolean.TRUE.booleanValue() : Boolean.FALSE.booleanValue();
@@ -243,6 +248,10 @@ public abstract class AbstractTest implements AbstractPerformer {
 	
 	public static WebElementFactory getWebElementFactory(){
 		return WEBELEMENTFACTORY ;
+	}
+	
+	public static WebElementFactory2 getWebElementFactory2(){
+		return WEBELEMENTFACTORY2 ;
 	}
 	public static WebElementFactory1 getWebElementFactory1(){
 		return WEBELEMENTFACTORY1 ;

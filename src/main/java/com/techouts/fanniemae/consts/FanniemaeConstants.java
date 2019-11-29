@@ -12,7 +12,7 @@ public final class FanniemaeConstants {
 	public static final String FANNIEMAE_BASE_URL = "fanniemae.base-url";
 	public static final String FANNIEMAE_TEST_REPORT_NAME = "fanniemae.test-report.name";
 	public static final String DEFAULT_FANNIEMAE_TEST_REPORT_NAME = "FannieMae-TestReport";
-	public static final String SHEET_NAME = "TestData";
+	public static final String SHEET_NAME = "TestData_CreateCatalog";
 	public static final int TEST_CASE_ID = 0;
 	public static final int UPDATE_RESULT = 2;
 	public static final int UPDATE_ERROR_MESSAGE = 3;

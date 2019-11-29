@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13648" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:33Z">
+  <suite name="Suite" duration-ms="223076" started-at="2019-11-29T10:00:59Z" finished-at="2019-11-29T10:04:42Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="13648" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:33Z">
-      <class name="com.pt.Sample1">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="beforeSuite" is-config="true" duration-ms="100" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:20Z">
+    <test name="Test1" duration-ms="223076" started-at="2019-11-29T10:00:59Z" finished-at="2019-11-29T10:04:42Z">
+      <class name="com.fanniemae.CreateAcCatalogRequisition">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.fanniemae.CreateAcCatalogRequisition@5023bb8b]" name="beforeSuite" is-config="true" duration-ms="78" started-at="2019-11-29T10:00:59Z" finished-at="2019-11-29T10:00:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="beforeClass" is-config="true" duration-ms="2" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:20Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.fanniemae.CreateAcCatalogRequisition@5023bb8b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-29T10:01:00Z" finished-at="2019-11-29T10:01:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="openApplication" duration-ms="13489" started-at="2019-11-26T13:49:20Z" finished-at="2019-11-26T13:49:33Z">
+        <test-method status="PASS" signature="createSpecialRequestsRequisitions()[pri:0, instance:com.fanniemae.CreateAcCatalogRequisition@5023bb8b]" name="createSpecialRequestsRequisitions" duration-ms="117832" started-at="2019-11-29T10:01:00Z" finished-at="2019-11-29T10:02:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-11-26T13:49:33Z" finished-at="2019-11-26T13:49:33Z">
+        </test-method> <!-- createSpecialRequestsRequisitions -->
+        <test-method status="PASS" signature="approve()[pri:1, instance:com.fanniemae.CreateAcCatalogRequisition@5023bb8b]" name="approve" duration-ms="105029" started-at="2019-11-29T10:02:57Z" finished-at="2019-11-29T10:04:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approve -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.fanniemae.CreateAcCatalogRequisition@5023bb8b]" name="afterClass" is-config="true" duration-ms="14" started-at="2019-11-29T10:04:42Z" finished-at="2019-11-29T10:04:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pt.Sample1@2cc44ad]" name="afterSuite" is-config="true" duration-ms="4708" started-at="2019-11-26T13:49:34Z" finished-at="2019-11-26T13:49:38Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.fanniemae.CreateAcCatalogRequisition@5023bb8b]" name="afterSuite" is-config="true" duration-ms="5366" started-at="2019-11-29T10:04:43Z" finished-at="2019-11-29T10:04:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.pt.Sample1 -->
+      </class> <!-- com.fanniemae.CreateAcCatalogRequisition -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
